@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+#logo-mid {
+  height: 200px;
+}
+
+#brand-statement {
+  color: rgb(5, 5, 5);
+  background-color: rgba(255, 255, 255, .6);
+  padding: 30px;
+}
+
+#contact-form {
+  color: rgb(5, 5, 5);
+  background-color: rgba(255, 255, 255, .6);
+  padding: 100px;
+}
+
+#statement-hero {
+  background-image: url(https://i.imgur.com/sXsSjwz.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-hero {
+  background-image: url(https://i.imgur.com/sXsSjwz.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-item {
+  margin: 20px;
+}
+.icon {
+  margin-top: 20px;
+}
+.photo-level-item {
+  margin-left: 90px;
+}
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+.is-horizontal-center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
