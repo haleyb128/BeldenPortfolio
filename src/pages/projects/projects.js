@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 export class Projects extends Component {
     render() {
+
         return (
             <div className="Home">
                 <section class="hero is-light is-fullheight">
                     <div class="hero-head">
-                        <nav class="navbar">
+                    <nav class="navbar">
                             <div class="container">
                                 <div class="navbar-brand">
                                     <Link className="navbar-item" to="/">
@@ -165,4 +166,12 @@ export class Projects extends Component {
                 </section>
             </div>
         )}
+        burgerToggle = function() {
+            let linksEl = document.querySelector('.narrowLinks');
+            if (linksEl.style.display === 'block') {
+                linksEl.style.display = 'none';
+            } else {
+                linksEl.style.display = 'block';
+            }
+        }
 }
