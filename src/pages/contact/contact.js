@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ContactForm } from "../../components/contactForm/contactForm";
+import { ContactMessage } from "../../components/contactMessage/contactMessage";
 import { ContactInfo } from "../../components/contactInfo/contactInfo";
 import { Link } from "react-router-dom";
 
@@ -45,7 +45,7 @@ export class Contact extends Component {
           </div>
           <ContactInfo/>
         </section>
-        <ContactForm/>
+        <ContactMessage/>
       </div>
     );
 }
