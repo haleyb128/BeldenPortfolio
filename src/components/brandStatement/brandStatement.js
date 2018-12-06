@@ -6,7 +6,7 @@ export class BrandStatement extends Component {
         <section className="hero is-light is-fullheight" id="statement-hero">
           <div className="hero-body">
             <div className="container">
-              <h2 className="subtitle is-4" id="brand-statement">
+              <h2 className="subtitle is-4 is-size-6-mobile" id="brand-statement">
               Full Stack Web Developer with background in Spanish/English translation and teaching with 
               a passion for improving user experience and accessibility. 
               Enjoys working with and motivating others, providing unique experience 
