@@ -1,42 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { SidebarMenu } from "./sidebarMenu"
 
 
-let SidebarMenu = props => {
-    return (
-      <aside className="menu">
-        <p className="menu-label" />
-        <ul className="menu-list">
-          <li>
-            <Link className="navbar-item" to="/" onClick={props.toggleState}>
-                Home
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-item" to="/about" onClick={props.toggleState}>
-                About
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-item" to="/resume" onClick={props.toggleState}>
-                Resume
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-item" to="/projects" onClick={props.toggleState}>
-                Projects
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-item" to="/contact" onClick={props.toggleState}>
-                Contact
-            </Link>
-          </li>
-        </ul>
-      </aside>
-    );
-  };
-class Navbar extends Component {
+export class Navbar extends Component {
     constructor(props) {
         super(props);
     
@@ -61,6 +28,7 @@ class Navbar extends Component {
             menu = "";
           }  
       return (
+        <div>
             <nav className="navbar">
               <div className="container">
                 <div className="navbar-brand">
@@ -95,6 +63,10 @@ class Navbar extends Component {
                 </div>
               </div>
             </nav>
+            <div id="side-bar-hamburger">
+            {menu}
+          </div>
+        </div>
       )
     }
 }
